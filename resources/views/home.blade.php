@@ -1,39 +1,28 @@
-<!DOCTYPE html>
-<html>
+@extends('layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Appointment Management</title>
+@section('content')
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 mb-3 mb-sm-0 mx-auto mt-5">
+                <div class="card bg-body-tertiary border-0">
+                    <div class="card-body px-4 py-5">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="card-title pb-3">Welcome {{ Auth::user()->name }} to the Appointment App 👏</h3>
+                        </div>
+                        <p class="card-text pb-3">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue lectus non urna
+                            scelerisque congue. Nunc cursus nulla sit amet gravida ullamcorper. Proin varius ex nec felis
+                            imperdiet, et ornare turpis consectetur. Praesent eget tortor eget purus tristique sagittis id
+                            rutrum nulla. In vel volutpat arcu. Vivamus id justo euismod, iaculis sapien quis, vestibulum
+                            tortor. Ut tempus ante justo, nec mattis odio fringilla sed. Curabitur ullamcorper ultricies
+                            tellus, varius tristique tellus varius eget. Nullam accumsan volutpat est, eu luctus arcu
+                            fringilla nec.
+                        </p>
+                        <a href="{{ route('appointments.index') }}" class="btn btn-primary">See Appointments</a>
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
-        <div class="container">
-            <a class="navbar-brand mb-0 h1">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="d-flex">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Appointments</a>
-                        </li>
-                    </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </nav>
-</body>
-
-</html>
+    </div>
+@endsection

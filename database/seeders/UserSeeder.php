@@ -28,6 +28,11 @@ class UserSeeder extends Seeder
                 'name' => 'Ujang',
                 'username' => 'ujang',
                 'preferred_timezone' => 'Pacific/Auckland',
+            ],
+            [
+                'name' => 'Aris',
+                'username' => 'aris',
+                'preferred_timezone' => 'Asia/Jakarta',
             ]
         ]);
 

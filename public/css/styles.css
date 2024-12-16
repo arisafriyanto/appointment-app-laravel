@@ -11,3 +11,8 @@
 .bg-blue-light {
     background-color: #e4f3ff;
 }
+
+.alert-login{
+    top: 2rem !important;
+    right: -6rem !important;
+}
